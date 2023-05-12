@@ -1,0 +1,38 @@
+hardware used :
+raspberry pi 4 
+
+opearting system used :
+latest raspiberry pi os 
+
+software tools / libraries:
+raspicam 
+libcamera
+libcamera-dev 
+picamera2 
+ffmpeg
+QtGL
+youtube livestream
+docker 
+
+storage:
+amazon web services s3 bucket to store timelapse images 
+
+
+highlevel features:
+livestream 
+timelapse 
+
+technical features:
+automatically start the stream at 7am and end the stream at 10pm 
+unit tests 
+cpu temperature logging 
+
+additional stuff that would be nice:
+email notfications on cpu temp, other important variables 
+
+
+prompt 1: 
+I am tasked with creating a livestream and timelapse device that captures images and video for 2 years. I am seeking your help and to go back and forth on the design. 
+I've listed out most of the technolgies used. I would like you to go over it and provide some solutions. I want to keep the system design elegant so I want to use python  
+to manage ffmpeg stream and images. I don't know what libraries to use to store the timelapse photos on my AWS s3 bucket and I'm unfamilar with AWS. Please ask me questions and 
+help me work through a design before we start coding. Thank you.
