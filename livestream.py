@@ -26,8 +26,9 @@ S3_BUCKET = "your-s3-bucket-name"
 
 # Create a command for ffmpeg to stream to YouTube
 command = (
-    f"ffmpeg -f h264 -i - -c:v copy -f flv rtmp://a.rtmp.youtube.com/live2/{YOUTUBE_STREAM_KEY}"
+    f"ffmpeg -f h264 -i - -f lavfi -i anullsrc -c:v copy -c:a aac -f flv rtmp://a.rtmp.youtube.com/live2/{YOUTUBE_STREAM_KEY}"
 )
+
 
 
 def start_ffmpeg():
