@@ -54,8 +54,24 @@ def livestream(duration):
     stop_ffmpeg(ffmpeg_process)
 
 
+
 if __name__ == "__main__":
     # Stream for 60 seconds as an example
     livestream_duration = 60
     livestream(livestream_duration)
 
+    # Run the timelapse
+    # timelapse()
+
+# def livestream_and_timelapse():
+#     livestream_thread = threading.Thread(target=livestream, args=(LIVESTREAM_DURATION,))
+#     timelapse_thread = threading.Thread(target=timelapse)
+
+#     livestream_thread.start()
+#     timelapse_thread.start()
+
+#     livestream_thread.join()
+#     timelapse_thread.join()
+
+# if __name__ == "__main__":
+#     livestream_and_timelapse()
